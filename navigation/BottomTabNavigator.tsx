@@ -26,10 +26,10 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="Resources"
+        name="Push Yourself"
         component={TabTwoNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="link" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="hand" color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -66,7 +66,7 @@ function TabTwoNavigator() {
       <TabTwoStack.Screen
         name="TabTwoScreen"
         component={TabTwoScreen}
-        options={{ headerTitle: 'Tab Two Title' }}
+        options={{ headerTitle: 'Push Yourself!' }}
       />
     </TabTwoStack.Navigator>
   );

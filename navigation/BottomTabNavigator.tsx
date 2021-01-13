@@ -7,6 +7,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
+import TabThreeScreen from '../screens/TabThreeScreen';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
@@ -30,6 +31,13 @@ export default function BottomTabNavigator() {
         component={TabTwoNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="hand" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="What's Next"
+        component={TabThreeNavigator}
+        options={{
+          tabBarIcon: ({ color }) => <TabBarIcon name="question" color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -69,5 +77,19 @@ function TabTwoNavigator() {
         options={{ headerTitle: 'Push Yourself!' }}
       />
     </TabTwoStack.Navigator>
+  );
+}
+
+const TabThreeStack = createStackNavigator<TabThreeParamList>();
+
+function TabThreeNavigator() {
+  return (
+    <TabThreeStack.Navigator>
+      <TabThreeStack.Screen
+        name="TabThreeScreen"
+        component={TabThreeScreen}
+        options={{ headerTitle: "What's Next?" }}
+      />
+    </TabThreeStack.Navigator>
   );
 }

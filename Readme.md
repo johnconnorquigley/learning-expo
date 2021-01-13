@@ -1,5 +1,5 @@
 # Hack-a-thing
-by Connor Quigley CS 98 19W
+by Connor Quigley CS 98
 
 ## Requirements
 - NodeJS 12
@@ -12,7 +12,7 @@ by Connor Quigley CS 98 19W
 
 Clone the github repository with `git clone https://github.com/johnconnorquigley/learning-expo`
 
-In terminal, navigate to the directory 'learning-expo' and run 'npm start' on the command line. 
+In terminal, navigate to the directory 'learning-expo' and run 'npm install' then 'npm start' on the command line. 
 
 On android, use the expo app to scan the QR code that will appear in the terminal. On ios, use the camera to scan the QR code. 
 
@@ -29,8 +29,17 @@ I then extended the application from this tutorial to explore a few more feature
 
 The second feature is a button you press that sends you a push notification. This is all it does and I think its funny, but I also thought it was useful for me to learn how to use the expo notification api because I envision my app having scheduling functionality that sends different alerts to the user at scheduled times. 
 
-The final feature is a page of text where everytime you click the text, the text doubles, but the font size decreases. My goal here was to learn how to use hooks in order to have state inside functions and control the information and style of what is being displayed. 
+The final feature is a page of text where everytime you click the text, the text doubles, but the font size decreases. My goal here was to learn how to use hooks in order to have state inside functions and control the information and style of what is being displayed. I also wanted to learn how to get elements that aren't things like buttons, to respond to events such as clicking. 
 
-## Overview
+## Testing
+You can test each feature by navigating through the app using the tab bar at the bottom of the screen.
+
+For the coin flip game, click the button.
+
+For the push notification, click the button that says push.
+
+For the doubling text page, click the text to double it and click the button to reset it. 
+
+## Conclusion
 
 React Native and the Expo SDK seem like really great tools for building application front ends and I believe I will use these in my final project. 

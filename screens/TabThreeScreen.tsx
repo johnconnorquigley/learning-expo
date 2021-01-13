@@ -11,7 +11,7 @@ export default function TabThreeScreen() {
 
    const newState = () => {
       setState(state.concat(state));
-      setFont(font * .73);
+      setFont(font * .75);
       console.log(state)
    }
 
@@ -28,6 +28,7 @@ export default function TabThreeScreen() {
 
   return (
 
+    <ScrollView>
     <View style={styles.container}>
         <PresentationalComponent myState = {state} newState = {newState} styleProp = {font}/>
         <View style={styles.buttonContainer}>
@@ -35,10 +36,11 @@ export default function TabThreeScreen() {
             title="Reset"
             onPress={() => {setFont(64); setState('Click to Double! ')}}
             color="#FFFFFF"
-            accessibilityLabel="Fetch heads or tails"
+            accessibilityLabel="Doubler Text"
           />
         </View>
     </View>
+    </ScrollView>
 
   )
 

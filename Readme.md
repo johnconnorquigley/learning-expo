@@ -31,3 +31,6 @@ The second feature is a button you press that sends you a push notification. Thi
 
 The final feature is a page of text where everytime you click the text, the text doubles, but the font size decreases. My goal here was to learn how to use hooks in order to have state inside functions and control the information and style of what is being displayed. 
 
+## Overview
+
+React Native and the Expo SDK seem like really great tools for building application front ends and I believe I will use these in my final project. 
